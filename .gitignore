@@ -1,0 +1,10 @@
+.DS_STORE
+dist/
+node_modules/
+node/
+etc/
+bower_components/
+.tmp/
+watchlib.cfg
+*.log
+easytest-report.xml

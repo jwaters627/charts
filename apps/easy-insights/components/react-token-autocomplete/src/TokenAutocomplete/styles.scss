@@ -1,0 +1,75 @@
+.wrapper {
+    font-family: CHOpenSans;
+    font-size: 12px;
+    position: relative;
+
+    input {
+      vertical-align: middle;
+      border: none;
+      cursor: default;
+      flex-grow: 1;
+      display: inline-block;
+      font-size: 12px;
+      min-height: 25px;
+      font-family: CHOpenSans;
+      &:focus{
+        outline: 0;
+      }
+      @media screen and(-webkit-min-device-pixel-ratio:0) {
+        font-size: 16px;
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+    .input-wrapper {
+      border: 1px solid #bdbebf;
+      border-radius: 4px;
+      padding: 1px 2px;
+      display: flex;
+      font-weight: 400;
+      overflow: hidden;
+      flex-wrap: wrap;
+      min-height: 26px;
+      &.focus {
+        outline: none;
+        box-shadow: 0px 1px 6px 0px rgba(0,198,196,0.25);
+        border: 1px solid #00c6c5;
+      }
+    }
+
+    .non-empty-input {
+      padding: 5px 4px;
+    }
+    .processing {
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      position: relative;
+      border-right: 2px solid #ddd;
+      border-left: 2px solid #ddd;
+      border-bottom: 2px solid #ddd;
+      border-top: 2px solid #888;
+      border-radius: 100%
+    }
+
+    .dropdown-indicator {
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-top: 7px solid #999;
+      border-bottom: 7px solid transparent;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      top: 12px;
+      right: 10px;
+    }
+    .fake-placeholder {
+      font-size: 12px;
+      padding-left: 6px;
+      padding-top: 5px;
+      color: #aaa;
+      cursor: default;
+    }
+}

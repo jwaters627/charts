@@ -1,0 +1,35 @@
+
+const EasyActions = [
+  'searchCards',
+  'prepareNewSearch',
+  'cardsLoaded',
+  'clearCards',
+  'prepareExpandCard',
+  'expandCard',
+  'expandAllCards',
+  'l2CardLoaded',
+  'processQueryError',
+  'updateFilter',
+  'filterDataLoaded',
+  'setFilters',
+  'clearFilters',
+  'updateQuery',
+  'updateHoverDate',
+  'updateFocus',
+  'updateCalendarDropdown',
+  'tweetLoaded',
+  'cardMounted',
+  'setMainLoading',
+  'state2Url',
+  'redirect2Login',
+  'redirectToDashboard',
+  'navigateBack',
+  'revert2Landing',
+  'setSummary',
+  'setBreadcrumbRoot',
+  'show404',
+  'setQueryHelper',
+  'filterResourcesError'
+];
+
+export default EasyActions;

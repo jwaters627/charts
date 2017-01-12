@@ -1,0 +1,136 @@
+@import "../../scss/vars";
+
+.ei-card {
+  //border: 1px solid $gray-dark !important;
+  background: white;
+  display: block;
+  border-radius: 4px;
+  margin: 0.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+  -moz-box-shadow: 0px 0px 4px 0px rgba(36,42,52,0.12),0px 2px 2px 0px rgba(36,42,52,0.25);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(36,42,52,0.12),0px 2px 2px 0px rgba(36,42,52,0.25);
+  box-shadow: 0px 0px 4px 0px rgba(36,42,52,0.12),0px 2px 2px 0px rgba(36,42,52,0.25);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+
+  .l2-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    .l2-link-txt {
+      font-size: 14px;
+      font-weight: normal;
+      color: $gray-text;
+      cursor: pointer;
+      line-height: 36px;
+      padding: 0.2rem 1rem;
+      &:hover {
+        color: $gray-dark;
+      }
+    }
+  }
+
+  .card-menu {
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    z-index: 3;
+
+    .icon-ellipsis {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      fill: $gray-dark;
+      &:hover {
+        fill: $gray-text;
+      }
+    }
+    .dropdown.btn-group {
+      .dropdown-toggle:after {
+        content: none !important;
+      }
+      .dropdown-menu {
+        min-width: 110px;
+        margin-right: 4px;
+        a.dropdown-item {
+          color: $gray-text;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .card-block {
+    padding: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .card-head {
+    position: relative;
+    color: $gray-subheader;
+    font-size: 1.125rem;
+    line-height: 1.3rem;
+    font-weight: $font-weight-normal;
+    text-align: center;
+
+    &.card-block {
+      padding-bottom: 0.05rem;
+    }
+
+    .msg {
+      margin-bottom: 0.4rem;
+      padding: 0 20px;
+      strong {
+        font-style: normal;
+        font-weight: $semi-bolded;
+        color: $orange-strong;
+      }
+    }
+  }
+
+  &.no-data .card-head.card-block {
+    padding-bottom: 0.5rem;;
+  }
+
+  .card-title {
+    border-bottom: 1px solid $gray-divider-light;
+    color: $gray-text;
+    font-size: 1rem;
+    font-weight: $font-weight-normal;
+    margin-bottom: 0.8rem;
+  }
+  .card-content {
+    padding: 0.9rem 10%;
+
+    &.card-content-wider {
+      padding: 0.9rem 1.68rem 3.125rem 1.68rem;
+    }
+
+    .title-wrap {
+      margin-bottom: 0.8rem;
+      border-bottom: 1px solid $gray-divider-light;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 1.5625rem;
+
+      h4 {
+        margin-bottom: 0;
+        border-bottom: 0;
+        display: inline-block;
+      }
+      .sub {
+        font-size: 0.75rem;
+        color: $gray-text;
+        margin-left: 4px;
+        font-weight: $font-weight-normal;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

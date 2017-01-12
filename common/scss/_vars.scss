@@ -1,0 +1,95 @@
+/*
+ * _vars.scss
+ *
+ */
+
+
+
+
+
+/* ---------- COLORS ---------- */
+$blue-light: #9cdcfd;
+$blue-strong: #5a9bd4;
+$gray-divider: #BDBEBF;
+$gray-text: #78797C;
+$gray-divider-light: rgba(189, 190, 191, 0.3);
+
+
+
+
+
+/* ---------- GENERAL STYLES ---------- */
+$semi-bolded: 600;
+
+/********* COLORS ***********/
+
+$green-strong     : #70AF46;
+$green-light      : #8AD56F;
+$orange-strong    : #ED7D34;
+$orange-light     : #ECC6A3;
+$blue-stronger    : #4771B8;
+$blue-strong      : #5a9bd4;
+$blue-light       : #9cdcfd;
+$red-strong       : #A60010;
+$red-light        : #e43e3b;
+$red-strong2      : #c32635;
+$turquoise        : #00c6c5;
+$turquoise-strong : #009494;
+$turquoise-light  : #00c6c5;
+$white            : #FFFFFF;
+
+// BGs
+$general-bg    : #FAFAFA;
+$bar-bg        : #F4F4F4;
+
+// grays
+$gray-divider        : #BDBEBF;
+$gray-legends        : darken(#c6c6c8, 10%);
+$gray-divider-light  : rgba(189, 190, 191, 0.3);
+$gray-divider-strong : #bdbec0;
+$gray-text           : #78797C;
+$gray-text-light     : #999;
+$gray-subheader      : #333333;
+$gray-header         : #252525;
+$gray-divider2       : #dcdcdc;
+$gray-main-bg        : #f4f4f4;
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// General styles
+$semi-bolded: 600;
+$font-weight-normal: normal;
+$font-weight-light: 100;
+
+// BS BREAK POINTS
+$iphone5-breakpoint: 320px;
+$iphone6-breakpoint: 375px;
+$sm-breakpoint : 544px;
+$md-breakpoint : 768px;
+$lg-breakpoint : 940px;
+$tablet-horizontal: 1024px;
+$xl-breakpoint : 1200px;
+$monitor-breakpoint: 1500px;
+
+
+// Calendar styles
+$triangle-size      : 4px;
+$item-size          : 25px;
+$border-color       : #AEAEAE;
+$muted-color        : #CCC;
+$background-color   : #F0F0F0;
+$border-radius      : 4px;
+$selected-color     : #216ba5;
+
+// Filter styles
+$dropdown-filter-width: 250px;
+$dropdown-max-height: 157px;

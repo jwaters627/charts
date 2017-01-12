@@ -1,0 +1,36 @@
+@import "../../scss/vars";
+
+.feedback-btn {
+  position: fixed;
+  top: 18px;
+  right: 75px;
+  width: 245px;
+  height: 30px;
+  line-height: 30px;
+  background-color: $blue-stronger;
+  color: white;
+  font-weight: normal;
+  padding: 0 15px;
+  font-size : 0.875rem;
+  display: block;
+  z-index: 1031;
+  transition: background-color 350ms ease;
+  text-decoration: none !important;
+  &:hover {
+    background-color: lighten($blue-stronger, 8%);
+    color: white;
+  }
+  &:visited, &:active {
+    color: white !important;
+  }
+
+  .icon-feedback {
+    position: absolute;
+    top: 3px;
+    right: 17px;
+    width: 26px;
+    height: 26px;
+    fill: white;
+  }
+
+}

@@ -1,0 +1,24 @@
+@import "../../scss/vars";
+
+.query-helper {
+  @include search-box-padding();
+
+  a {
+    color: $turquoise;
+    &:hover {
+      color: $turquoise-strong;
+    }
+  }
+
+  .qh-row1, .qh-row2 {
+    font-size: 0.8375rem;
+  }
+
+  .qh-row1 {
+
+  }
+  .qh-row2 {
+    padding-top: 0.2rem;
+    color: $gray-text-light;
+  }
+}

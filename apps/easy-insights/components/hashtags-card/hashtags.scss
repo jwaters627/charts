@@ -1,0 +1,46 @@
+@import "../../scss/vars";
+
+.hashtags-card {
+  .title-wrap {
+    margin-bottom: 0.75rem;
+    h4 {
+      display: inline-block;
+    }
+    .sub {
+      margin-left: 10px;
+      color: #999;
+    }
+  }
+  .section-content {
+    .hashtags-graph {
+      .bar-g {
+        .bar-label, .bar-value {
+          font-size: 0.85em;
+        }
+        .bar-label {
+          &.highlight {
+            font-weight: $semi-bolded;
+          }
+        }
+        .bar-value {
+          &.highlight {
+            font-weight: $semi-bolded;
+            fill: $green-strong;
+          }
+        }
+
+        .bar-bg {
+          fill : $bar-bg;
+        }
+        .bar {
+          &.normal {
+            fill : $green-light;
+          }
+          &.highlight {
+            fill : $green-strong;
+          }
+        }
+      }
+    }
+  }
+}

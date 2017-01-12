@@ -1,0 +1,84 @@
+@import "../../scss/vars";
+
+.ch-tweet-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+
+  .tweet-elem {
+    text-align: center;
+  }
+
+  .tweet-replacement {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+    border: 1px solid rgb(225, 232, 237);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: Helvetica, Roboto, 'Segoe UI', Calibri, sans-serif;
+    padding: 1.09375rem 1.09375rem 0.65625rem;
+
+    .tweet-head {
+      position: relative;
+
+      .twitter-avatar-default {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        display: block;
+        text-decoration: none;
+        background: url('../../img/defaultTwitterAvatar.png') no-repeat center center;
+        background-size: contain;
+      }
+
+      .tweet-author {
+        margin-top: 2px;
+        padding-left: 45px;
+
+        .dname {
+          font-weight: $semi-bolded;
+          white-space: nowrap;
+          word-wrap: normal;
+          color:rgb(28, 32, 34);
+          font-size: 14px;
+          line-height: 1.05;
+          text-decoration: none;
+          &:hover {
+            color: rgb(59, 148, 217);
+          }
+          &:visited {
+            color: rgb(43, 123, 185);
+          }
+        }
+        .uname {
+          font-size: 0.765625rem;
+          color: rgb(105, 120, 130);
+          display: block;
+          line-height: 1.05;
+          text-decoration: none;
+        }
+
+        .download-bird {
+          width: 1.09375rem;
+          height: 1.09375rem;
+          background: url("../../img/TwitterLogo-small.png") no-repeat center center;
+          background-size: 100%;
+          display: block;
+          float: right;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .deleted-message {
+      padding: 1.2rem 2rem;
+      text-align: center;
+      font-weight: $font-weight-normal;
+      line-height: 1rem;
+    }
+  }
+}

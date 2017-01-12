@@ -1,0 +1,25 @@
+.gender {
+  .percent {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  .icons{
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    top: -68%;
+    right: 0;
+    bottom: 10%;
+    z-index: 1000;
+    margin: auto;
+    .ch-icon.icon-male {
+      fill: #5F9ED8;
+    }
+    .ch-icon.icon-female {
+      fill: #93BDE5;
+    }
+  }
+}
+
+

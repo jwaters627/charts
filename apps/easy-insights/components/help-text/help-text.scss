@@ -1,0 +1,67 @@
+@import "../../scss/vars";
+
+.help-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  &.active {
+    right: 0;
+  }
+
+  .flyover {
+    background: black;
+    opacity: 0.65;
+    position: absolute;
+    z-index: 100;
+    font-size: 0.7rem;
+    font-family: CHOpenSans;
+    font-weight: $font-weight-normal;
+    color: white;
+    border-radius: 4px;
+    bottom: 5px;
+    right: 4px;
+    left: 4px;
+    word-wrap: break-word;
+    padding: 15px;
+    text-align: left;
+    bottom: 50px;
+  }
+
+  .ch-icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    fill: #767676;
+    &.level2 {
+      fill: #bdbebf;
+    }
+    &.level2:hover {
+      fill: #767676;
+    }
+  }
+  img {
+    cursor: pointer;
+    height: 24px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+}
+
+.ei-card-l2 .help-text{
+  position: absolute;
+  line-height: 2rem;
+  bottom: auto;
+  top: 5px;
+  left: -2px;
+  display: inline-block;
+  .ch-icon {
+    display: inline-block;
+    vertical-align: center;
+    width: 15px;
+    height: 15px;
+  }
+}

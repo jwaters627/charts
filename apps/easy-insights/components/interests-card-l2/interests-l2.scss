@@ -1,0 +1,13 @@
+@import '../cardL2/level2-vars';
+
+.interests-card-l2.ei-card-l2 {
+  .col-head {
+    height: 2.6rem !important;
+  }
+  .table-bars-layout {
+    min-width: $text-label-col-width + $main-content-col-width + $net-sentiment-col-width + $sentiment-breakdown-col-width;
+    .main-section {
+      width: $text-label-col-width + $main-content-col-width;
+    }
+  }
+}

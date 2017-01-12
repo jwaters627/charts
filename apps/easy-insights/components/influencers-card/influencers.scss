@@ -1,0 +1,118 @@
+@import "../../scss/vars";
+
+.top-influencers-card {
+
+  &.ei-card {
+    padding-bottom: 0;
+  }
+
+  .author-item {
+    padding: 0.9375rem;
+    position: relative;
+    border: 1px solid $gray-divider-light;
+    border-radius: 4px;
+    margin-bottom: 0.68rem;
+    @include clearfix();
+
+    .avatar-and-score {
+      float: left;
+      width: 5.315rem;
+      min-height: 9.125rem;
+      .avatar-link {
+        display: block;
+        .author-avatar {
+          width: 5.315rem;
+        }
+      }
+      .author-score {
+        margin-top: 0.4rem;
+        text-align: center;
+        .score-number {
+          color: $gray-header;
+          font-size: 1.125rem;
+          margin-bottom: 0;
+          font-weight: $font-weight-normal;
+        }
+        .score-desc {
+          font-size: 0.7rem;
+          padding: 0 0.5rem;
+          font-weight: $font-weight-normal;
+          line-height: 0.9rem;
+          color: $gray-text-light;
+        }
+      }
+    }
+
+    .author-info {
+      margin-left:  5.315rem + 0.9375rem;
+      padding-top: 0.3125rem;
+      .author-head {
+        padding-bottom: 0.8rem;
+        .display-name {
+          font-size: 0.8rem;
+          line-height: 1.15rem;
+          margin-bottom: 0;
+          word-wrap: break-word;
+          word-break: normal;
+          text-align: left;
+          a { color: black; font-weight: $semi-bolded;}
+        }
+        .handle {
+          a { color: $gray-text-light}
+          font-size: 0.7rem;
+        }
+      }
+      .author-stats {
+        margin: 0;
+        text-align: center;
+        font-size: 0.8rem;
+        position: relative;
+
+        .aitem {
+          position: relative;
+          text-align: left;
+          display: inline-block;
+          width: 33.3%;
+
+          .item-wrap {
+            display: inline-block;
+          }
+
+          .item-label {
+            display: block;
+            font-size: 0.68rem;
+            line-height: 0.8rem;
+            font-weight: $font-weight-normal;
+            color: $gray-text-light;
+            text-transform: capitalize;
+          }
+
+          .number {
+            display: block;
+            color: $gray-header;
+            font-size: 0.72rem;
+            font-weight: $semi-bolded;
+            text-align: left;
+            padding-right: 1px;
+            text-align: center;
+          }
+        }
+      }
+
+      .author-desc {
+        font-size: 0.72rem;
+        font-weight: $font-weight-normal;
+        padding-top: 0.65rem;
+        word-wrap: break-word;
+      }
+    }
+
+    &.highlight {
+      .author-score {
+        .score-number {
+          font-weight: $semi-bolded;
+        }
+      }
+    }
+  }
+}

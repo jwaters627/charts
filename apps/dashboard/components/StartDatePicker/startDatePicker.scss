@@ -1,0 +1,93 @@
+.datePickerContainer{
+	margin-left: 100px;
+	margin-top: 40px;
+
+	h3{
+		margin-top: 20px;
+		font-weight: 100;
+		font-size: 20px;
+
+		.bold{
+			font-weight: 600;
+		}
+		.greyed{
+			color: gray;
+		}
+	}
+}
+
+.calendarIcon{
+	display: inline-block;
+	float: left;
+	height: 38px;
+	margin-top: 5px;
+	margin-right: 11px;
+	color: #47494B;
+}
+
+.dateInput{
+	border: 0;
+	border-bottom: 1px solid black;
+	resize: none;
+	outline: none;
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+.emailInput{
+	border: 0;
+	border-bottom: 1px solid black;
+	resize: none;
+	outline: none;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 30%;
+}
+
+.calendarContainer{
+	position: fixed;
+	z-index: 1000000000;
+	top: 240px;
+	left: 100px;
+	border: 1px solid black;
+
+}
+
+hr{
+	margin-left: -100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.checkboxContainer{
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+.submitButton{
+	font-family: CHOpenSans;
+	padding: 10px;
+	background-color: #4771B8;
+	font-size: 16px;
+	text-align: center;
+	width: 200px;
+	color: white;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.submitButton:hover{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+

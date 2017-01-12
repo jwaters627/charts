@@ -1,0 +1,54 @@
+.dateRangeContainer{
+	display: inline-block;
+	float:left;
+	overflow: hidden; 
+	opacity: 0.3;
+
+	&.greyed{
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.sectionHeader{
+		color: white;
+		margin-left: 8px;
+		margin-top: 8px;
+		margin-bottom: 0;
+		font-weight: 500;
+		font-size: 14px;
+	}
+
+	.dateContainer{
+		margin-left: 10px;
+		margin-top: 20px;
+
+		.dateRangeText{
+			border-bottom: 1px solid white;
+			display: inline-block;
+			color: white;
+			margin-top: 8px;
+			margin-bottom: 0;
+			padding-left: 14px;
+			padding-right: 14px;
+			font-weight: 500;
+			font-size: 14px;
+		}
+
+		.dateRangeLabel{
+			display: inline-block;
+			margin-left: 8px;
+			margin-right: 24px;
+			color: white;
+			font-weight: 300;
+			font-size: 14px;
+		}
+
+		.calendarComponentContainer{
+			position: fixed;
+			top: 89px;
+			left: none;
+			border: none
+		}
+
+	}
+}

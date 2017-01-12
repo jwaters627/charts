@@ -1,0 +1,72 @@
+/*
+ * BarsCard.scss
+ *
+ */
+
+
+
+
+
+.bars-card {
+	margin: 0;
+	padding: 15px;
+	overflow: hidden;
+	display: inline-block;
+	flex-wrap: wrap;
+
+	.bar-row {
+		min-width: 305px;
+		height: 11px;
+		margin: 0 -5px 15px 0;
+		z-index: 1;
+		flex: 1 0 50%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+
+		&.last-odd { visibility: hidden; }
+
+		.label, .count {
+			display: inline-block;
+			color: #000;
+			margin-right: 10px;
+			font-size: 0.85em;
+			float: left;
+			width: 60%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			line-height: 17px;
+			height: 20px;
+			text-align: left;
+		}
+
+		.count {
+			color: #5e9bd4;
+			margin-right: 0;
+			width: 20%;
+		}
+
+		.bar {
+			display: inline-block;
+			width: 20%;
+			height: 12px;
+			margin-right: 16px;
+			background-color: #f4f4f4;
+			border-radius: 100px;
+			position: relative;
+			top: 4px;
+			float: left;
+
+			span {
+				display: block;
+				height: 100%;
+				background-color: #5e9bd4;
+				border-radius: 100px;
+			}
+		}
+	}
+}
+
+
+
+

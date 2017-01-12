@@ -1,0 +1,172 @@
+/*
+ * DashboardList.scss
+ *
+ */
+
+
+
+
+
+.dashboard-list {
+	.dashboard-tab {
+		float: left;
+		position: fixed;
+		width: 40px;
+		height: 60px;
+		background-color: #65a5d9;
+		cursor: pointer;
+		z-index: 10000;
+		opacity: 0;
+		top: 0;
+
+		i.fa {
+			color: white;
+			display: block;
+			margin: 12px auto;
+			width: 40%;
+		}
+	}
+
+	.dashboard-menu {
+		transition: 300ms ease-in-out;
+
+		&.closed {
+			left: -100%;
+		}
+
+		&.open {
+			width: 227px;
+			height: 92vh;
+			overflow-x: hidden;
+			overflow-y: overlay;
+			position: fixed;
+			top: 48px;
+			left: 0;
+			background: #FFF;
+			z-index: 1000;
+		  	border-right: 1px solid lightgray;
+
+		  .create {
+			clear: none;
+			padding: 5px 0 5px 0;
+			border-bottom: 1px solid lightgray;
+			label {
+			  margin: 0 0 0 20px;
+			}
+			&:hover {
+			  background-color: #F5F5F5;
+			}
+		  }
+		  .helpicon {
+			border-top: 1px solid lightgray;
+		  }
+		  .list {
+			clear: none;
+			margin: 10px 0 5px 0;
+			&:hover {
+			  background-color: #F5F5F5;
+
+			}
+		  }
+
+
+
+				i.fa {
+					float: right;
+					color: #FFF;
+					cursor: pointer;
+					margin: 9px 0 0 0;
+				}
+
+			.filter {
+				padding: 3px 10px 0px 10px;
+				height: 30px;
+				color: gray;
+				clear: both;
+				font-weight: 400;
+				font-size: 0.85em;
+				cursor: pointer;
+
+			  ul {
+				margin: 20px 0 0 0;
+			  }
+
+				&.active {
+					color: #65a5d9;
+					i.fa {
+					  color: #65a5d9;
+					}
+				}
+
+				i.fa {
+					width: 20px;
+					color: lightgray;
+				}
+			  	i.left {
+				  float: left;
+				}
+			  	i.fa-2x {
+				  	float: right;
+				  	margin: 0 auto;
+				  	width: 20px;
+				}
+
+				label { cursor: pointer; margin-top: 4px;}
+			}
+
+			.folder-header {
+				border-bottom: 1px solid lightgray;
+				margin: 20px 0 0 0;
+				cursor: pointer;
+				padding: 0 0 0 15px;
+
+				h2 { color: gray; font-size: 1.0em; width: 90px; display: inline-block; }
+				i.fa { font-size: 1.0em; color: gray; position: relative; top: 1px; }
+			}
+			.hide {
+			  display: none;
+			}
+		  	.show {
+			  display: block;
+			  position: relative;
+			}
+			.rotate{
+			  float: right;
+			}
+
+			.rotate.down{
+			  float: right;
+			  -moz-transform:rotate(-90deg);
+			  -webkit-transform:rotate(-90deg);
+			  transform:rotate(-90deg);
+			}
+
+			.folders, .dashboards {
+				list-style-type: none;
+			    -webkit-padding-start: 0;
+			    -moz-padding-start: 0;
+
+				li {
+				  	float: left;
+				  	margin-left: 20px;
+					height: 60px;
+				  	width: 85%;
+					cursor: pointer;
+					word-break: break-word;
+
+
+					&:hover { background-color: #F5F5F5; }
+
+					i { color: lightgray; }
+					label { cursor: pointer;
+					  		width: 100%;
+					  		display: block;
+					  		vertical-align: middle;
+					  		text-align: left;
+					  		margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

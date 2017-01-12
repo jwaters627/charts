@@ -1,0 +1,99 @@
+/*
+ * InfluencersCard.scss
+ *
+ */
+
+
+
+
+
+.influencers-card {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	.influencer {
+		width: 295px;
+		height: 180px;
+		margin: 10px;
+		padding: 10px;
+		border: 1px solid #E8E8E8;
+		border-radius: 5px;
+		z-index: 1;
+
+		.influencer-header {
+			height: 35px;
+
+			img.klout-score {
+				height: 35px;
+				margin-right: 5px;
+				float: left;
+			}
+
+			img.avatar {
+				width: 35px;
+				height: 35px;
+				margin-right: 10px;
+				display: inline-block;
+				float: left;
+			}
+
+			h1 {
+				font-size: 0.8em;
+				font-weight: bold;
+				float: left;
+				width: 50%;
+				margin-bottom: 5px;
+			}
+
+			h2 {
+				font-size: 0.8em;
+				font-weight: 300;
+				color: #757575;
+				float: left;
+				width: 50%;
+			}
+		}
+
+		.influencer-metrics {
+			padding: 15px 0;
+			border-bottom: 1px solid #E8E8E8;
+			height: 50px;
+
+			.metric {
+				width: 25%;
+				float: left;
+				margin-right: 20px;
+
+				h3 {
+					font-size: 0.75em;
+					font-weight: 300;
+					color: #757575;
+					margin-bottom: 0;
+					line-height: 5px;
+				}
+
+				span { font-size: 0.75em; font-weight: bold; }
+			}
+		}
+
+		.influencer-sample-tweet {
+			margin-top: 5px;
+
+			p {
+				color: gray;
+				font-size: 0.65em;
+				margin-bottom: 0;
+			}
+
+			.influencer-date {
+				font-size: 0.55em;
+				margin: 8px 0 0 0;
+				padding: 0;
+				line-height: 0;
+			}
+		}
+	}
+}

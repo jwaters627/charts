@@ -1,0 +1,24 @@
+@import "../../scss/vars";
+
+.level-2 {
+  .breadcrumbs {
+    line-height: 2.25rem;
+    font-size: 0.8rem;
+    padding-left: 0.3rem;
+
+    a {
+      color: $gray-header;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    span.current {
+      cursor: default;
+    }
+    .separator {
+      cursor: default;
+      margin: 0 0.3rem;
+    }
+  }
+}

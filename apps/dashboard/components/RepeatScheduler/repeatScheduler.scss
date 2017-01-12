@@ -1,0 +1,48 @@
+
+
+.datePickerContainer{
+	margin-left: 100px;
+	margin-top: 40px;
+
+
+	.date-picker{
+		display: inline-block;
+	}
+
+	h3{
+		margin-top: 20px;
+		font-weight: 100;
+		font-size: 20px;
+
+		.bold{
+			font-weight: 600;
+		}
+		.greyed{
+			color: gray;
+		}
+	}
+
+	p{
+		display: inline-block;
+		margin-left: 16px;
+		margin-right: 16px;
+
+		&.greyed{
+			opacity: 0.4;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	.selectedDate{
+		border-bottom: 1px solid black;
+		margin-top: 8px;
+		display: inline-block;
+	}
+
+	.dateSelectionContainer{
+		margin-top: 48px;
+		margin-bottom: 48px;
+	}
+
+}

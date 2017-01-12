@@ -1,0 +1,124 @@
+@import "../../scss/vars";
+
+.retweets-card {
+
+  &.ei-card {
+    padding-bottom: 0;
+    .card-block.section {
+      padding-bottom: 3.12rem;
+      &.card-content .title-wrap {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .retweet-item {
+    //display: inline-table;
+    //table-layout: fixed;
+    //width: 100%;
+    min-height: 140px;
+    position: relative;
+
+    .retweet-info {
+      //flex: 1;
+      display: table-cell;
+      width: 33.3%;
+      margin: 0;
+      padding: 0 5px;
+      text-align: center;
+      font-size: 0.8rem;
+      position: relative;
+      z-index: 2;
+
+      &:after {
+        content: ' ';
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: -4px;
+        right: 0;
+        border-color: $gray-divider-light;
+        border-width: 1px 1px 1px 0px;
+        border-style: solid;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-left: 0;
+        background-color: white;
+      }
+
+      .info-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10px;
+        bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+
+        .retweet-num, .stats {
+          flex: 1 1 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: column;
+          width: 100%;
+          padding: 0 10px;
+          z-index: 2;
+          border-left: 1px solid $gray-divider-light;
+        }
+
+        .retweet-num {
+          position: relative;
+          .num {
+            font-size: 1.1rem;
+            color: $blue-strong;
+            font-weight: $semi-bolded;
+          }
+          .sub1 {
+            color: $gray-text-light;
+            font-size: .75rem;
+            font-weight: $font-weight-normal;
+          }
+          .sub2 {
+            color: $gray-text-light;
+            font-size: .55rem;
+            font-weight: $font-weight-normal;
+            line-height: 0.7rem;
+          }
+        }
+
+        .stats {
+          position: relative;
+          border-top: 1px solid $gray-divider-light;
+          display: flex;
+          align-items: center;
+          flex-flow: column;
+          padding: 0.3rem;
+        }
+
+        .ritem {
+          position: relative;
+          //padding: 1.5% 0;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-flow: column;
+          line-height: 0.9rem;
+          max-height: 1.5rem;
+          //word-wrap: break-word;
+          width: 100%;
+          color: $gray-text-light;
+          font-size: 0.7rem;
+          span {display: inline}
+          .number {
+            font-size: 0.75rem;
+            font-weight: $semi-bolded;
+            color: $gray-header;
+          }
+        }
+      }
+    }
+  }
+}

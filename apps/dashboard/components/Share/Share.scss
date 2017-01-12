@@ -1,0 +1,55 @@
+/*
+ * Share.scss
+ *
+ */
+
+
+
+
+
+.share {
+	margin: 10px 0 0 50px;
+	background-color: #F0F0F0;
+	padding: 10px 20px;
+	width: 550px;
+	border-radius: 3px;
+	height: 80px;
+
+	&.user-list {
+		background-color: #FFF;
+		margin: 0;
+		width: 99%;
+	}
+
+	.initials {
+		float: left;
+		background: url('bg.png') no-repeat 50% 50%;
+		color: white;
+		border-radius: 50%;
+		padding: 8px 0;
+		text-align: center;
+		margin: 10px 10px 0 0;
+		width: 40px;
+		height: 40px;
+	}
+
+	.name, .email {
+		float: left;
+		color: #A1A1A1;
+		font-size: 1.2em;
+		width: 70%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.name { color: #272727; }
+
+	.checkbox, i {
+		float: right;
+		margin: 0;
+		color: #c3c3c3;
+		font-size: 1.8em;
+		cursor: pointer;
+
+		&.fa { position: relative; top: -13px; }
+	}
+}

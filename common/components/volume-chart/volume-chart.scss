@@ -1,0 +1,136 @@
+/*
+ * volume-chart.scss
+ *
+ */
+
+
+
+
+@import "../../scss/vars";
+
+
+
+
+
+.chart {
+    svg {
+		position: relative;
+		z-index: 2;
+    }
+
+    .highlight-gridline {
+		position: absolute;
+		top: 4rem;
+		bottom: 3.1rem;
+		width: 1px;
+		border-left: 1px solid $gray-divider-light;
+		z-index: 0;
+    }
+
+	.line {
+		fill: none;
+		stroke-width: 2px;
+
+		&.vol-line { stroke: $blue-light; }
+	}
+
+    .axis {
+        .domain {
+            stroke: none;
+            fill: none;
+        }
+
+        .tick {
+            line {
+                stroke: $gray-divider;
+                fill: none;
+                height: 4px;
+            }
+
+            text {
+                fill : $gray-text;
+                font-weight: 100;
+                font-size: 0.55rem;
+            }
+
+            &.highlight {
+                text {
+                    font-weight: $semi-bolded;
+                    fill: black;
+                }
+            }
+        }
+
+        &.x-axis {
+            .tick text {font-size: 0.4375rem;}
+
+            &.x-axis-1, &.x-axis-2 {
+                .tick {
+                    text { display: none; }
+                }
+            }
+
+            &.month-legend {
+                .tick {
+                    line { display: none; }
+                    text { font-size: 0.45rem; }
+                }
+            }
+
+            &.ampm-legend {
+                .tick {
+                    line { display: none; }
+                    text { font-size: 0.4375rem; }
+                }
+            }
+        }
+
+        &.y-axis {
+            .domain { stroke: none; }
+ 
+            .tick {
+                line { display: none; }
+                text { font-size: 0.58rem; }
+            }
+        }
+	}
+
+	.estimate-legend {
+		.legend-dashed-line {
+			stroke-width: 2;
+			stroke: $blue-light;
+		}
+
+		.legend-text {
+			fill: $gray-text;
+			font-size: 0.7rem;
+			font-weight: 100;
+		}
+	}
+
+	.hlight-point, .external-hlight-point {
+		fill: $gray-text;
+		text {
+			font-size: 0.75rem;
+			font-weight: 100;
+		}
+	}
+	
+	.hl-num-bg {
+		fill: #fff;
+		fill-opacity: 0.7
+	}
+
+	&.volume-chart {
+		.hlight-point {
+			fill: $blue-strong;
+			text { font-weight: $semi-bolded; }
+		}
+		.current-point { fill: $blue-light; }
+
+		.external-hlight-point {
+			text { fill : $gray-text; }
+			circle { fill : none}
+		}
+	}
+}

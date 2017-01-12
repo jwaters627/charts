@@ -1,0 +1,20 @@
+@import '../cardL2/level2-vars';
+
+.words-card-l2.ei-card-l2 {
+  .table-bars-layout {
+    min-width: $text-label-col-width + $main-content-col-width*1 + $net-sentiment-col-width + $sentiment-breakdown-col-width;
+    .main-section {
+      width: $text-label-col-width + $main-content-col-width*1;
+      .col-head {
+        //height: 4.8rem;
+        .title-content {
+          .help-text {
+            img {
+             margin-bottom: 59px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

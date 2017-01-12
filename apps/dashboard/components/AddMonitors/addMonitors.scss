@@ -1,0 +1,51 @@
+.addMonitorContainer{
+	height: 125px;
+	width: 22%;
+	overflow-y: scroll;
+	border-right: 1px solid #dddddd;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+
+	p{
+		color: white;
+	}
+
+	#chipContainer{
+		display: inline-block;
+	}
+
+	#addMonitorText{
+		text-align: center;
+		margin-top: 55px;
+		color: #ffffff;
+	}
+
+	#addMonitorTextWithChips{
+		text-align: center;
+		margin-top: 12px;
+		color: #ffffff;
+		cursor: pointer;
+	}	
+
+	.listedMonitor{
+		display: inline-block;
+		max-width: 70%;
+		overflow: hidden;
+		white-space: nowrap;
+		color: #ffffff;
+		text-overflow: ellipsis;
+		margin-bottom: 0;
+	}
+
+	.recentlyUsed{
+		padding-left: 6px;
+			padding-top: 6px;
+			margin-top: 8px;
+			margin-bottom: 8px;
+
+		&.open{
+			border-top: 1px solid white;
+		}
+	}
+}

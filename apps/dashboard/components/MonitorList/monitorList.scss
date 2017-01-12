@@ -1,0 +1,41 @@
+.monitorListContainer{
+	height: 184px;
+	width: 17%;
+	overflow-y: scroll;
+	border-right: 1px solid #dddddd;
+	display: inline-block;
+	float: left;
+
+	.listContainer{
+		width: 90%;
+		margin-left: 8%;
+	}
+
+
+	.searchMonitor{
+		position: absolute;
+		border: 0;
+		border-bottom: 1px solid #bbbbbb;
+		color: #bbbbbb;
+		background-color: #555555;
+		resize: none;
+		outline: none;
+		text-align: left;
+		padding-top: 10px;
+		margin-bottom: 15px;
+		width: 230px;
+		margin-left: 10px;
+		z-index: 100;
+	}
+
+	.listedMonitor{
+		display: inline-block;
+		max-width: 70%;
+		overflow: hidden;
+		white-space: nowrap;
+		color: #ffffff;
+		text-overflow: ellipsis;
+	}
+
+
+}

@@ -1,0 +1,33 @@
+/*
+ * UserList.scss
+ *
+ */
+
+
+
+
+
+#userList {
+	width: 550px;
+	border-radius: 3px;
+	border: 1px solid gray;
+	margin: 5px 0 15px 50px;
+
+	ul {
+		list-style: none;
+		border-bottom: 1px solid gray;
+		-webkit-padding-start: 0;
+		-webkit-margin-after: 0;
+		max-height: 321px;
+		overflow-y: auto;
+	}
+
+	.user-actions {
+		text-align: center;
+
+		button {
+			display: inline-block;
+			margin: 10px 0;
+		}
+	}
+}

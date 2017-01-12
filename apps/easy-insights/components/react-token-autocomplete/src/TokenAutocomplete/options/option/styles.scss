@@ -1,0 +1,21 @@
+.option-wrapper {
+  padding: 5px 5px 5px 10px;
+  cursor: default;
+}
+
+.option {
+  padding: 5px;
+  cursor: default;
+  &.selected {
+    background: #f4f4f4;
+  }
+}
+
+.header-wrapper {
+  font-weight: bold;
+  color: #78797C;
+  padding: 5px 5px 5px 5px;
+  &:hover {
+    background: white;
+  }
+}

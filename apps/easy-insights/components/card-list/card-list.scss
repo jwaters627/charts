@@ -1,0 +1,39 @@
+@import "../../scss/vars";
+
+.card-list {
+  padding: 0.5rem 0 3rem;
+  margin: 0 0.5rem;
+  display: block;
+}
+
+.ei-grid-layout {
+  position: relative;
+  //transition: height 200ms ease;
+
+  .react-grid-item {
+    transition: transform 200ms ease;
+    z-index: 1;
+    &.react-draggable-dragging {
+      transition: none;
+      z-index: 3;
+    }
+  }
+  .react-grid-placeholder {
+    transition-duration: 100ms;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    &:after {
+      content : ' ';
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      top: 0.5rem;
+      bottom: 0.5rem;
+      border: 3px dashed $gray-divider-light;
+    }
+  }
+}

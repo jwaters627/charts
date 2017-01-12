@@ -1,0 +1,42 @@
+@import "../../scss/vars";
+
+
+.export-caption {
+  background-color: $gray-subheader;
+  font-family: CHOpenSans, sans-serif;
+  color: white;
+  position: relative;
+  font-weight: $font-weight-normal;
+  font-size: 12px;
+  min-height: 65px;
+  overflow: hidden;
+  .caption-logo {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 34px;
+      height: 34px;
+  }
+  .caption-content {
+    margin-left : 65px;
+    padding: 14px 15px 15px 0;
+    overflow: hidden;
+    .caption-title {
+      .query {
+        font-weight: normal;
+      }
+      .separator {
+        margin: 8px;
+      }
+      .card-title {
+        letter-spacing: 0px;
+      }
+    }
+    .caption-desc {
+      line-height: 16px;
+      font-size: 11px;
+      overflow: hidden;
+      letter-spacing: 0px;
+    }
+  }
+}

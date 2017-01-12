@@ -1,0 +1,23 @@
+.entireReportArea{
+	background-color: #F0F0F0;
+	margin-top: 48px;
+	height: 100%;
+	width: 100%;
+
+	.reportNavButton{
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 16px;
+		margin-bottom: 16px;
+		cursor: pointer;
+
+
+		.label{
+			display: inline-block;
+			color: #515151;
+			font-size: 14px;
+			font-weight: 500;
+			vertical-align: middle;
+		}
+	}
+}

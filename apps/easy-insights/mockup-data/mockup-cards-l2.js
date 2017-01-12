@@ -1,0 +1,235 @@
+
+const wordCardL2 = {
+   'id':'words',
+   'analysisTimeMillis': 605,
+   'endDate': '2016-01-28',
+   'message': 'Popular words in this conversation are *tired*, *veggies* and *time*',
+   'rank' : 0,
+   'startDate': '2016-01-15',
+   'data': {
+     'words' : [
+      {
+         'name':'Indianapolis',
+         'id':0,
+         'pctUniqueAuthors':0.01785937,
+         'pctPositiveSentiment':0.7581055,
+         'pctNegativeSentiment':0.8672538,
+         'pctNeutralSentiment':0.6525639,
+         'netSentiment':0.8096548
+      },
+      {
+         'name':'SnapChat',
+         'id':0,
+         'pctUniqueAuthors':0.015450905,
+         'pctPositiveSentiment':0.5099439,
+         'pctNegativeSentiment':0.28565854,
+         'pctNeutralSentiment':0.978022,
+         'netSentiment':-0.61319023
+      },
+      {
+         'name':'Celebrities',
+         'id':0,
+         'pctUniqueAuthors':0.013728231,
+         'pctPositiveSentiment':0.97041637,
+         'pctNegativeSentiment':0.35194767,
+         'pctNeutralSentiment':0.5841451,
+         'netSentiment':-0.82973784
+      },
+      {
+         'name':'Univision',
+         'id':0,
+         'pctUniqueAuthors':0.017024703,
+         'pctPositiveSentiment':0.9372355,
+         'pctNegativeSentiment':0.5235966,
+         'pctNeutralSentiment':0.3746708,
+         'netSentiment':0.98659486
+      },
+      {
+         'name':'Blogging',
+         'id':0,
+         'pctUniqueAuthors':0.003760974,
+         'pctPositiveSentiment':0.35686696,
+         'pctNegativeSentiment':0.0026253462,
+         'pctNeutralSentiment':0.36021227,
+         'netSentiment':0.76173216
+      },
+      {
+         'name':'R&B',
+         'id':0,
+         'pctUniqueAuthors':0.0199393,
+         'pctPositiveSentiment':0.09285259,
+         'pctNegativeSentiment':0.9885449,
+         'pctNeutralSentiment':0.56919765,
+         'netSentiment':0
+      },
+      {
+         'name':'The X Factor',
+         'id':0,
+         'pctUniqueAuthors':0.01937474,
+         'pctPositiveSentiment':0.91196305,
+         'pctNegativeSentiment':0.23507333,
+         'pctNeutralSentiment':0.1540358,
+         'netSentiment':0.07
+      },
+      {
+         'name':'High School',
+         'id':0,
+         'pctUniqueAuthors':0.001476399,
+         'pctPositiveSentiment':0.9030623,
+         'pctNegativeSentiment':0.34633023,
+         'pctNeutralSentiment':0.73020756,
+         'netSentiment':0.12860316
+      },
+      {
+         'name':'Lobbying',
+         'id':0,
+         'pctUniqueAuthors':0.00085921894,
+         'pctPositiveSentiment':0.11754972,
+         'pctNegativeSentiment':0.38471812,
+         'pctNeutralSentiment':0.38056093,
+         'netSentiment':0.28875637
+      },
+      {
+         'name':'Bbc Radio 1',
+         'id':0,
+         'pctUniqueAuthors':0.005467015,
+         'pctPositiveSentiment':0.080530226,
+         'pctNegativeSentiment':0.33291703,
+         'pctNeutralSentiment':0.35835868,
+         'netSentiment':0.62624675
+      },
+      {
+         'name':'Georgia State University',
+         'id':0,
+         'pctUniqueAuthors':0.0011250871,
+         'pctPositiveSentiment':0.4024824,
+         'pctNegativeSentiment':0.39353138,
+         'pctNeutralSentiment':0.08423513,
+         'netSentiment':0.94027543
+      },
+      {
+         'name':'Politico',
+         'id':0,
+         'pctUniqueAuthors':0.0021242984,
+         'pctPositiveSentiment':0.53726465,
+         'pctNegativeSentiment':0.33947146,
+         'pctNeutralSentiment':0.21382952,
+         'netSentiment':0.4948992
+      },
+      {
+         'name':'Wine',
+         'id':0,
+         'pctUniqueAuthors':0.00087819656,
+         'pctPositiveSentiment':0.21040207,
+         'pctNegativeSentiment':0.8572818,
+         'pctNeutralSentiment':0.40260667,
+         'netSentiment':0.08748639
+      },
+      {
+         'name':'Georgia',
+         'id':0,
+         'pctUniqueAuthors':0.00079417916,
+         'pctPositiveSentiment':0.096925914,
+         'pctNegativeSentiment':0.22236574,
+         'pctNeutralSentiment':0.63947624,
+         'netSentiment':0.68674
+      },
+      {
+         'name':'Cooking',
+         'id':0,
+         'pctUniqueAuthors':0.0010589055,
+         'pctPositiveSentiment':0.55564606,
+         'pctNegativeSentiment':0.4370187,
+         'pctNeutralSentiment':0.92920583,
+         'netSentiment':0.42970014
+      },
+      {
+         'name':'Eminem',
+         'id':0,
+         'pctUniqueAuthors':0.00070222846,
+         'pctPositiveSentiment':0.8224396,
+         'pctNegativeSentiment':0.12039274,
+         'pctNeutralSentiment':0.47637916,
+         'netSentiment':0.72644854
+      },
+      {
+         'name':'Atlanta',
+         'id':0,
+         'pctUniqueAuthors':0.00086036074,
+         'pctPositiveSentiment':0.64674205,
+         'pctNegativeSentiment':0.78669,
+         'pctNeutralSentiment':0.25667143,
+         'netSentiment':0.7941981
+      },
+      {
+         'name':'NHL',
+         'id':0,
+         'pctUniqueAuthors':0.0007379189,
+         'pctPositiveSentiment':0.90880775,
+         'pctNegativeSentiment':0.6594024,
+         'pctNeutralSentiment':0.3278165,
+         'netSentiment':0.05743301
+      },
+      {
+         'name':'YouTube',
+         'id':0,
+         'pctUniqueAuthors':0.006291316,
+         'pctPositiveSentiment':0.74494666,
+         'pctNegativeSentiment':0.41025698,
+         'pctNeutralSentiment':0.9663018,
+         'netSentiment':0.46850348
+      },
+      {
+         'name':'Ed Sheeran',
+         'id':0,
+         'pctUniqueAuthors':0.0007488665,
+         'pctPositiveSentiment':0.5749004,
+         'pctNegativeSentiment':0.88220984,
+         'pctNeutralSentiment':0.6365224,
+         'netSentiment':0.18908143
+      },
+      {
+         'name':'Philippines',
+         'id':0,
+         'pctUniqueAuthors':0.00074390887,
+         'pctPositiveSentiment':0.63232434,
+         'pctNegativeSentiment':0.46488595,
+         'pctNeutralSentiment':0.8258794,
+         'netSentiment':0.031235456
+      },
+      {
+         'name':'Electronic Music',
+         'id':0,
+         'pctUniqueAuthors':0.00080590125,
+         'pctPositiveSentiment':0.10121685,
+         'pctNegativeSentiment':0.9227237,
+         'pctNeutralSentiment':0.9303623,
+         'netSentiment':0.2796588
+      },
+      {
+         'name':'Pinoy',
+         'id':0,
+         'pctUniqueAuthors':0.005393301,
+         'pctPositiveSentiment':0.06899351,
+         'pctNegativeSentiment':0.9065876,
+         'pctNeutralSentiment':0.72176844,
+         'netSentiment':0.5693851
+      },
+      {
+         'name':'Country Music',
+         'id':0,
+         'pctUniqueAuthors':0.0010852622,
+         'pctPositiveSentiment':0.69868004,
+         'pctNegativeSentiment':0.6967549,
+         'pctNeutralSentiment':0.36168945,
+         'netSentiment':0.9783168
+      }
+    ]
+  }
+}
+
+let cards = {
+  'words' : wordCardL2
+};
+
+export default cards;

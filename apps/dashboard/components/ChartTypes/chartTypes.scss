@@ -1,0 +1,181 @@
+
+.allSourcesContainer{
+	display: inline-block;
+	float:left;
+	opacity: 0.4;
+	width: 160px;
+
+	&.greyed{
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.sectionHeader{
+		color: white;
+		margin-left: 8px;
+		margin-top: 8px;
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+
+
+.sourceContainer{
+	width: 100px;
+	margin-top: 0px;
+	padding-left: 18px;
+	display: inline-block;
+
+
+	img{
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		margin: 15px auto 10px auto;
+	}
+
+	p{
+		color: #bbbbbb;
+		margin-top: 10px;
+		text-align: center;
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+
+	&.open{
+		
+		svg{
+			fill: #00C6C5;
+		}
+
+		img{
+			fill: #00C6C5;
+			color: #00C6C5;
+		}
+
+		p{
+			color: #00C6C5;
+		}
+	}
+}
+
+.sourceContainerNotWorking{
+	width: 120px;
+	height: 72px;
+	margin-top: 0px;
+	margin-left: 18px;
+	display: inline-block;
+	cursor: default;
+	opacity: 0.3;
+
+
+	img{
+		width: 34px;
+		height: 34px;
+		display: block;
+		margin: 15px auto 10px auto;
+	}
+
+	p{
+		color: #bbbbbb;
+		margin-top: 10px;
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 0;
+	}
+}
+
+
+.allAnalysisTypesContainer{
+	text-align: center;
+	margin-top: 17px;
+	cursor: pointer;
+
+	.chartAnalysisText{
+		color: white;
+		padding-right: 14px;
+		font-weight: 300;
+		font-size: 14px;
+		display: inline-block;
+		margin-left: 4px;
+		cursor: pointer;
+		padding-top: 6px;
+
+		&.highlighted{
+			color: #35D1CF;
+		}
+	}
+
+	img{
+		width: 44px;
+		margin-left: 10px;
+		margin-right: 5px;
+	}
+
+	.displayedChartTypeContainer{
+		margin-top: 30px;
+		cursor: pointer;
+	}
+	
+}
+
+
+
+.dropdownContainer{
+		width: 230px;
+		padding-bottom: 10px;
+		display: inline-block;
+		top: 192px;
+		background-color: rgba(51,51,51,.95);
+		float: left;
+
+		.dropdownChartTypeName{
+			color: white;
+			display: inline-block;
+
+			&.selectedChart{
+				color:#00C6C5;
+			}
+		}
+
+		.dropdownChartTypeName:hover{
+			color: #00C6C5;
+		}
+
+		.chartTypeImage{
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			margin-top: 4px;
+			margin-right: 20px;
+		}
+
+		.chartTypeImage:hover{
+			fill: #00C6C5;
+		}
+
+		.sourceContainer{
+			width: 100%;
+			height: 50px;
+		}
+
+	}
+.testing{
+	display: inline-block;
+}
+
+.chartOptionsDropdown{
+	width: 180px;
+	margin-left: 74px;
+	position: fixed;
+	display: none;
+
+	&.open{
+		display: inline-block;
+	}
+}
+
+
+
+

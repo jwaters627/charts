@@ -1,0 +1,50 @@
+.modal-header > .button.close {
+  float: right;
+}
+.modal-header h1 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.modal-body .form-group  {
+  margin-bottom: 10px;
+}
+.modal-body input.form-control {
+  display: table-cell;
+  position:relative;
+  height: 34px;
+  width: 80%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.modal-body label  {
+  width: 20%;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+}
+.modal-footer {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  margin: 0 20px;
+  border-top: 1px solid #ccc;
+}
+.modal-footer > .modal-status {
+  float: right;
+  padding: 8px 4px;
+}
+.modal-footer > .button.save {
+  float: right;
+}
+.modal-footer > .button.save > i.fa {
+   padding: 6px 4px;
+}

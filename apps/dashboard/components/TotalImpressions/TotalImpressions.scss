@@ -1,0 +1,48 @@
+/*
+ * TotalImpressions.scss
+ *
+ */
+
+
+
+
+
+.total-impressions {
+	display: inline-block;
+	position: relative;
+	font-size: 10px;
+	margin: 10px;
+	margin-right: 0;
+	margin-bottom: 0;
+	z-index: 1;
+
+
+	/*
+	.xAxis, .yAxis {
+		path, line {
+			fill: none;
+			stroke: #7b7b7b;
+			shape-rendering: crispEdges;
+		}
+	}
+	*/
+
+	path.area {
+		fill: rgba(0, 152, 198, .2);
+		stroke: #0098C6;
+		stroke-width: 2;
+	}
+
+	path.areaTwo{
+		fill: rgba(247, 115, 1, 0.2);
+		stroke: #F77301;
+		stroke-width: 2;
+	}
+
+	path.areaThree{
+		fill: rgba(0, 230, 0, 0.2);
+		stroke: #00E600;
+		stroke-width: 2;
+	}
+
+}

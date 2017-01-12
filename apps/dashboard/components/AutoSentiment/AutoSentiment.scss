@@ -1,0 +1,10 @@
+.auto-sentiment {
+  position: relative;
+  font-size: 10px;
+  margin: 10px;
+  z-index: 1;
+
+  .yAxis {
+    z-index: 2;
+  }
+}

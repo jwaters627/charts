@@ -1,0 +1,78 @@
+/*
+ * TitleBar.scss
+ *
+ */
+
+
+
+
+
+.title-bar {
+	transition: 300ms ease-in-out top;
+
+	&.closed{
+		top: 0px;
+	}
+
+	&.open{
+	margin: 0;
+	background: #FFF;
+	height: 65px;
+	position: fixed;
+	top: 45px;
+	padding: 8px 0 0 25px;
+	color: #333;
+	padding-left: 50px;
+	z-index: 1000;
+	width: 100%;
+	background-color: #333333;
+
+	.menu-button {
+		float: right;
+		width: 110px;
+		height: 54px;
+		margin-top: 13px;
+		position: relative;
+		cursor: pointer;
+		text-align: center;
+
+		span.label { font-size: 0.7em; color: #fff; width: 100%; display: inline-block; position: relative; top: -5px; }
+
+		
+		&.customize{
+			float: none;
+			display: inline-block;
+			margin-top: 5px;
+			margin-left: 36%;
+			color: #fff;
+		}
+
+
+		&.delete{
+			float: none;
+			display: inline-block;
+			margin-top: 5px;
+			color: #fff;
+		}
+
+		&.schedule {
+			float: none;
+			display: inline-block;
+			margin-top: 5px;
+			color: #fff;
+		}
+
+
+		&#less {
+			margin-top: 5px;
+			span.fa { color: #fff; font-size: 1.4rem; }
+		}
+	}
+	}
+}
+
+
+
+@media (max-width: 1012px) {
+	.menu-button, #logoInfoText { display: none; }
+}

@@ -1,0 +1,35 @@
+@import '../../scss/vars';
+@import '../cardL2/level2-vars';
+
+.hashtags-card-l2.ei-card-l2 {
+  .sticky-column.text-label-col.content-col {
+    .col-head {
+      height: 2.6rem;
+    }
+    &:after {
+      background-color: white;
+    }
+  }
+  .table-bars-scroll-container {
+    .table-bars-layout {
+      &:after {
+        background-color: white;
+      }
+      .section-col.main-section {
+        .content-table {
+          .content-col {
+            &.text-label-col {
+            }
+            &.main-content-col.pct-col {
+              .col-head {
+                height: 2.6rem;
+              }
+              .col-body {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

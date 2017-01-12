@@ -1,0 +1,86 @@
+/*
+ * SharingModal.scss
+ *
+ */
+
+
+
+
+
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+	position: absolute;
+	left: 50px;
+	right: 50px;
+	background: transparent;
+	z-index: 2000;
+
+	#sharingModal {
+		background-color: #FFF;
+		border: 1px solid #bdbebf;
+		border-radius: 5px;
+		padding: 15px;
+		min-height: 500px;
+		margin-bottom: 10em;
+	
+		.close i { color: #000; font-size: 1.4rem; }
+
+	  h1 {
+		text-align: center;
+		width: 100px;
+		margin: 20px auto;
+		font-size: 1.5em;
+		font-weight: 100;
+		color: gray;
+	  }
+
+		h2 {
+			font-size: 1.2em;
+			color: gray;
+			margin: 50px 0 10px 50px;
+
+			i {
+				margin-right: 10px;
+				color: lightgray;
+
+				&.fa-link { transform: rotateX(180deg); }
+			}
+		}
+
+		h4 {
+			color: gray;
+			text-align: center;
+			margin: 15px;
+			font-size: 1.1em;
+		}
+
+		#email, #shareUrl {
+			width: 550px;
+			height: 50px;
+			padding: 5px 15px;
+			border-radius: 3px;
+			margin: 0 0 0 50px;
+			border: 1px solid gray;
+
+			/* &#shareUrl { width: 445px; } */
+		}
+
+		.shares {
+			max-height: 360px;
+			width: 625px;
+			overflow-y: auto;
+		}
+
+		button {
+			color: white;
+			background-color: #65a5d9;
+			border: 1px solid #65a5d9;
+			border-radius: 3px;
+			margin-left: 5px;
+			padding: 5px;
+			width: 100px;
+			height: 48px;
+		}
+	}
+}

@@ -1,0 +1,247 @@
+@import "../../scss/vars";
+
+.volume-sentiment-card {
+
+  &.ei-card {
+    .card-block {
+      overflow: visible;
+
+      .title-wrap {
+        margin-bottom: 0.1rem;
+      }
+      &.volume-block {
+        padding-bottom: 0;
+      }
+      &.sentiment-block {
+        padding-top: 3px;
+      }
+      .section-content {
+        overflow: visible;
+        .volume-chart, .sentiment-chart {
+          overflow: visible;
+        }
+      }
+    }
+  }
+
+  // &.ei-card-l1 .sentiment-block .title-wrap .sub { display : none}
+
+  /*
+  .content-wrapper {
+    position: relative;
+    &.charts-have-legend {
+      .highlight-gridline {
+        bottom: 4.95rem;
+      }
+    }
+    &.no-highlight-grid-lines {
+      .highlight-gridline {
+        display: none;
+      }
+      padding-bottom: 1.5rem;
+    }
+  }*/
+
+  .chart {
+    svg {
+      position: relative;
+      z-index: 2;
+    }/*
+    .highlight-gridline {
+      position: absolute;
+      top: 4.2rem;
+      bottom: 3.1rem;
+      width: 1px;
+      border-left: 1px solid $gray-divider-light;
+      z-index: 0;
+    }*/
+  }
+
+  #l1-sentiment-chart, #l1-volume-chart {
+
+    text {font-family: CHOpenSans;}
+
+    .line {
+        fill: none;
+        stroke-width: 2px;
+        &.vol-line { stroke: $blue-strong; }
+    }
+
+    .axis {
+
+      .domain {
+        stroke: none;
+        fill: none;
+      }
+
+      .tick {
+        line {
+          stroke: $gray-dark;
+          fill: none;
+          height: 4px;
+        }
+        text {
+          fill : $gray-text;
+          font-weight: $font-weight-normal;
+          //font-size: 0.55rem;
+        }
+
+        &.highlight {
+          text {
+            font-weight: $semi-bolded;
+            fill: black;
+          }
+        }
+      }
+
+      &.x-axis {
+        .tick text {font-size: 0.4375rem;}
+        &.x-axis-0 {
+          .domain {
+            fill: none;
+            stroke: $gray-text;
+            stroke-width: 0.25;
+          }
+          .tick {
+            line {
+              stroke-width : 0.5;
+            }
+            &.off { display: none}
+          }
+        }
+        &.x-axis-1, &.x-axis-2 {
+          .tick {
+            text {
+              display: none;
+            }
+          }
+        }
+        &.month-legend {
+          .tick {
+            line {
+              display: none;
+            }
+            text {
+              font-size: 0.45rem;
+            }
+          }
+        }
+        &.ampm-legend {
+          .tick {
+            line {
+              display: none;
+            }
+            text {
+              font-size: 0.4375rem;
+            }
+          }
+        }
+      }
+      &.y-axis {
+        .domain {
+          stroke: none;
+        }
+        .tick {
+          line {
+            display: none;
+          }
+          text {
+            font-size: 0.58rem;
+          }
+        }
+      }
+    }
+
+    .estimate-legend {
+      .legend-dashed-line {
+        stroke-width: 2;
+        stroke: $blue-strong;
+      }
+      .legend-text {
+        fill: $gray-text;
+        font-size: 0.7rem;
+        line-height: 0.75rem;
+        font-weight: $font-weight-normal;
+      }
+    }
+
+    .hlight-point, .external-hlight-point {
+      fill: $gray-text;
+      text {
+        font-size: 0.75rem;
+        font-weight: $font-weight-normal;
+      }
+    }
+
+    .hl-num-bg, .hl-btn-bg {
+      fill: white;
+      fill-opacity: 0.7
+    }
+
+    .hl-btn-bg {
+      stroke-width: 1px;
+      stroke : $gray-divider-light;
+      &.hover {
+        fill: $gray-main-bg;
+        fill-opacity: 1
+      }
+    }
+
+    .hl-click-area {
+      fill-opacity: 0;
+      stroke-opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  #l1-volume-chart {
+    .hlight-point {
+      fill: $blue-strong;
+      text {
+        fill: $gray-header;
+        font-weight: $semi-bolded;
+      }
+    }
+    .current-point {
+      fill: $blue-light;
+    }
+    .external-hlight-point {
+      text { fill : $gray-text; }
+      circle { fill : none}
+    }
+  }
+
+  #l1-sentiment-chart {
+
+    .hlight-point {
+      text { font-weight: $semi-bolded;}
+      &.positive {
+        fill: $green-strong;
+      }
+      &.negative {
+        fill: $red-strong2;
+      }
+    }
+    .external-hlight-point {
+      circle {
+        fill : none;
+      }
+      /*
+      &.positive {
+        circle { fill : $green-light}
+      }
+      &.negative {
+        circle { fill : $red-light}
+      }*/
+    }
+
+    .estimate-legend {
+      .legend-dashed-line {
+        stroke: $green-strong;
+      }
+      .current-point {
+        fill : $green-strong;
+      }
+    }
+  }
+}

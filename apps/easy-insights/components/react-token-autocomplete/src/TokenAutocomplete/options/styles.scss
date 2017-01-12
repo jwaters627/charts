@@ -1,0 +1,16 @@
+.options-wrapper {
+  position: absolute;
+  width: 100%;
+  margin-top: -1px;
+  max-height: 275px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  z-index: 20;
+  border-radius: 4px;
+  border: 1px solid #bdbebf;
+
+  .empty-info {
+    padding: 10px;
+  }
+}

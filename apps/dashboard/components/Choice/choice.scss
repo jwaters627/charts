@@ -1,0 +1,23 @@
+.frequencyContainer{
+margin-bottom: 30px;
+margin-top: 30px;
+
+
+	.frequencyOption{
+		font-family: CHOpenSans;
+		padding: 16px;
+		padding-left: 28px;
+		padding-right: 28px;
+		border: 1px solid rgba(200, 200, 200, 0.7);
+		font-size: 16px;
+		display: inline-block;
+		margin-left: 0;
+		margin-right: 0;
+		cursor: pointer;
+
+		&.selected{
+			background-color: #00BCD4;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,107 @@
+/*
+ * TitleBar.scss
+ *
+ */
+
+
+
+
+
+#titleBar {
+	margin: 49px 0 0 0;
+	background: #FAFAFA;
+	overflow: hidden;
+	height: 60px;
+	padding: 8px 0 0 25px;
+	color: #333;
+	padding-left: 50px;
+
+	#addLogo {
+		float: left;
+		width: 110px;
+		height: 40px;
+		padding-right: 3px;
+		background: no-repeat 50%;
+		background-size: 100px;
+		
+
+		label{
+			margin-top: 10px;
+
+			
+				#addLogoText{
+					position: relative;
+					display: inline-block;
+					top:-6px;
+				}
+
+
+			span{
+				margin-right: 5px;
+
+			}
+		}
+
+
+
+		.logo-input { display: none; opacity: 0.0; width: 100px; }
+
+		img {
+			width: 100px;
+			height: 30px;
+		}
+	}
+
+	#dashboardName {
+		float: left;
+		padding: 0 16px 0 3px;
+		max-width: 600px;
+		cursor: pointer;
+		overflow: hidden;
+		height: 30px;
+		padding-left:15px;
+		margin-top:7px;
+		border-left: 1px solid black;
+
+		span { display: inline-block; margin-top: 0px; max-width: 500px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;	}
+		i { color: #333; margin: 0 0 0 4px;	top: -5px; display: inline; position: relative;}
+		input {  z-index: 1000; margin-top: 0px; height: 30px; position: relative; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;	}
+	}
+
+	#logoInfoText {
+		clear: left;
+		float: left;
+		font-size: 0.6em;
+		font-style: italic;
+	}
+
+	.menu-button {
+		float: right;
+		width: 80px;
+		height: 45px;
+		margin-top: 13px;
+		position: relative;
+		cursor: pointer;
+		text-align: center;
+
+		.actionIcon{
+			font-size: 36px;
+		}
+
+		span.label { font-size: 0.7em; color: #47494B; width: 100%; display: inline-block; position: relative; top: -14px; }
+
+		&#addMedia {
+			margin-top: 5px;
+			span.fa { color: #47494B; font-size: 1.4rem; }
+		}
+		&#moreEllipsis {
+			margin-top: 5px;
+			margin-right: 50px;
+			span.fa { color: #47494B; font-size: 1.4rem; }
+		}
+	}
+}
+
+@media (max-width: 1012px) {
+	.menu-button, #logoInfoText { display: none; }
+}

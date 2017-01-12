@@ -1,0 +1,35 @@
+.mapDiv {
+  width: 100%;
+  text-align:center;
+  padding: 0px;
+}
+.topCountriesDiv {
+  width: 100%;
+  text-align:center;
+  padding: 5px 0px 0px 0px;
+  .topCountriesTable {
+    display: table;
+    width: 100%;
+    .topCountry {
+      padding: 0px 2px 0px 2px;
+      font-size: 0.75rem;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      border-right: 1px solid;
+      width:33%;
+      &:last-child {
+        border-right: 0;
+      }
+
+
+      .name {
+        line-height: 0.75rem;
+      }
+      .percent {
+        padding-top: 0.3rem;
+        line-height: 0.4rem;
+      }
+    }
+  }
+}

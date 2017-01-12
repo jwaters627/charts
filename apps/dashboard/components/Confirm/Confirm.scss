@@ -1,0 +1,44 @@
+/*
+ * Confirm.scss
+ *
+ */
+
+
+
+
+
+#confirm {
+	width: 500px;
+	margin: 0 auto;
+	position: absolute;
+	left: 50px;
+	right: 50px;
+	background-color: #FFF;
+	border: 1px solid #bdbebf;
+	border-radius: 5px;
+	padding: 15px;
+	z-index: 10002;
+
+	.close i { color: #8A8A8A; font-size: 1.4rem; }
+
+	h1 {
+		margin: 55px 0 25px 10px;
+		font-size: 1.25rem;
+	  	overflow-wrap: break-word;
+	}
+
+	p {
+		margin: 0 0 35px 10px;
+	  	overflow-wrap: break-word;
+	}
+
+	button {
+		float: right;
+		margin: 0 35px 35px 0;
+		width: 100px;
+		border: 0;
+		border-radius: 5px;
+		color: #fbeae9;
+		background-color: #e43e3b;
+	}
+}

@@ -1,0 +1,29 @@
+.reportCanvas{
+	width: 98%;
+	margin-left: 1%;
+	background-color: white;
+	box-shadow: 1px 1px 1px 1px rgba(150,150,150,0.8);
+	min-height: 800px;
+	margin-bottom: 20px;
+
+	&.greyedCanvas{
+		background-color: #fff;
+	}
+
+	.titleContainer{
+		display: block;
+	}
+
+	.reportTitle{
+		display: inline-block;
+		border: none;
+		background-color: rgba(0,0,0,0);
+		font-size: 18px;
+	}
+
+	.logoInput{
+		display: inline-block;
+		font-size: 18px;
+		margin: 16px;
+	}
+}

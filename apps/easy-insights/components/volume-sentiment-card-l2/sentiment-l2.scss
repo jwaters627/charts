@@ -1,0 +1,384 @@
+@import "../../scss/vars";
+
+.volume-sentiment-card-l2 {
+
+  .volsent-card-content {
+    margin: 1.5rem;
+    @media (max-width: $sm-breakpoint){
+      margin: 1.0rem;
+    }
+  }
+
+  .row {
+    overflow: hidden;
+    @media (max-width: $sm-breakpoint){
+      margin:0;
+      overflow:  visible;
+    }
+  }
+
+  .info-col {
+    position: relative;
+    .card-block {
+      position: relative;
+      z-index: 2;
+      padding-left: .9375rem;
+        @media (max-width: $sm-breakpoint){
+          padding-left: 0;
+          padding-right: 0;
+        }
+    }
+    &:after {
+      content: ' ';
+      position: absolute;
+      left: .9375rem;
+      right: 0;
+      top: 0;
+      bottom: -1000px;
+      background-color: $gray-bg-light;
+      border-right: 1px solid $gray-dark;
+      z-index: 0;
+      @media (max-width: $sm-breakpoint){
+        left:0;
+      }
+    }
+    @media (max-width: $sm-breakpoint){
+      &:after {
+        bottom: 0 !important;
+        border-right: 0;
+      }
+    }
+  }
+
+  .chart-col {
+
+    .card-block.volume-block {
+      padding-bottom: 0;
+    }
+
+    .card-block.sentiment-block {
+      padding-top: 0;
+    }
+
+    a.dd-point {
+      color: white;
+    }
+
+    #l2-sentiment-chart, #l2-volume-chart {
+
+      text {font-family: CHOpenSans;}
+
+      .hl-val-txt {
+        font-size: 0.8375rem;
+      }
+
+      .line {
+          fill: none;
+          stroke-width: 2px;
+          &.vol-line { stroke: $blue-strong; }
+      }
+
+      .axis {
+
+        .domain {
+          stroke: none;
+          fill: none;
+        }
+
+        .tick {
+          line {
+            stroke: $gray-dark;
+            fill: none;
+            height: 4px;
+          }
+          text {
+            fill : $gray-text;
+            font-weight: $font-weight-normal;
+            //font-size: 0.55rem;
+          }
+
+          &.highlight {
+            text {
+              font-weight: $semi-bolded;
+              fill: black;
+            }
+          }
+        }
+
+        &.x-axis {
+          .tick text {font-size: 0.5rem;}
+          &.x-axis-0 {
+            .domain {
+              fill: none;
+              stroke: $gray-text;
+              stroke-width: 0.25;
+            }
+            .tick {
+              line {
+                stroke-width : 0.5;
+              }
+              &.off { display: none}
+            }
+          }
+          &.x-axis-1, &.x-axis-2 {
+            .tick {
+              text {
+                display: none;
+              }
+            }
+          }
+          &.month-legend {
+            .tick {
+              line {
+                display: none;
+              }
+              text {
+                font-size: 0.5rem;
+              }
+            }
+          }
+          &.ampm-legend {
+            .tick {
+              line {
+                display: none;
+              }
+              text {
+                font-size: 0.5rem;
+              }
+            }
+          }
+        }
+        &.y-axis {
+          .domain {
+            stroke: none;
+          }
+          .tick {
+            line {
+              display: none;
+            }
+            text {
+              font-size: 0.65rem;
+            }
+          }
+        }
+      }
+
+      .estimate-legend {
+        .legend-dashed-line {
+          stroke-width: 2;
+          stroke: $blue-strong;
+        }
+        .legend-text {
+          fill: $gray-text;
+          font-size: 0.65rem;
+          line-height: 0.7rem;
+          font-weight: $font-weight-normal;
+        }
+      }
+
+      .hl-num-bg, .hl-btn-bg {
+        fill: white;
+        fill-opacity: 0.7
+      }
+
+      .hl-btn-bg {
+        stroke-width: 1px;
+        stroke : $gray-divider-light;
+        &.hover {
+          fill: $gray-main-bg;
+          fill-opacity: 1
+        }
+      }
+
+      .hl-click-area {
+        fill-opacity: 0;
+        stroke-opacity: 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #l2-volume-chart {
+    .hlight-point {
+      fill: $blue-strong;
+      circle { fill : $blue-strong}
+      text {
+        fill: $gray-header;
+        font-weight: $semi-bolded;
+      }
+    }
+    .external-hlight-point {
+      text { fill : $gray-text; }
+      circle { fill : none}
+    }
+  }
+
+  #l2-sentiment-chart {
+
+    .hlight-point {
+      text { font-weight: $semi-bolded;}
+      &.positive {
+        fill: $green-strong;
+      }
+      &.negative {
+        fill: $red-strong2;
+      }
+    }
+    .external-hlight-point {
+      circle {
+        fill : none;
+      }
+      /*
+      &.positive {
+        circle { fill : $green-light}
+      }
+      &.negative {
+        circle { fill : $red-light}
+      }*/
+    }
+
+    .estimate-legend {
+      .legend-dashed-line {
+        stroke: $green-strong !important;
+      }
+    }
+  }
+
+}
+
+.dd-point {
+  color: white;
+  background-color: $orange-strong;
+  font-size: 0.75rem;
+  padding: 0;
+  line-height: 1.31rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  display: block;
+  //vertical-align: middle;
+  text-align: center;
+  opacity: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+  &.active {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+  }
+}
+
+.volume-sentiment-card-l2 .volume-chart {
+  position: relative;
+  .dd-point {
+    position: absolute;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.drilldown-list {
+  padding: 0 0.75rem;
+  .dd-btns {
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    .btn-prev, .btn-next {
+      width: 30px;
+      position: absolute;
+      border-radius: 30px;
+      text-align: center;
+      background-color: $gray-bg-light;
+      line-height: 30px;
+      box-shadow:0px 1px 1px rgba(56, 56, 64, 0.51);
+      z-index: 10;
+      &:hover {
+        background-color: $gray-dark;
+      }
+      &:before {
+        font-family: FontAwesome;
+        font-size: 12px;
+        font-weight: 100;
+        color: $gray-text-light;
+        top: 6px;
+      }
+      &:disabled:before {
+        color: $gray-dark;
+      }
+    }
+
+    .btn-prev {
+      left: -41px;
+      top: 200px;
+      padding: 0 1px 0 0;
+      @media (max-width: $sm-breakpoint){
+        left: -42px;
+      }
+    }
+    .btn-next {
+      right:-2px;
+      top:200px;
+      padding: 0 0 0 1px;
+      @media (max-width: $sm-breakpoint){
+        right: -18px;
+      }
+    }
+    .btn-prev:before {
+      content: "\f053";
+    }
+    .btn-next:before {
+      content: "\f054";
+    }
+  }
+  .days-title {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    border-bottom: 1px solid $gray-divider-light;
+  }
+  .dd-items {
+    .dd-item {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      .dd-title {
+        cursor: pointer;
+        line-height: 1.1rem;
+        .dd-point {
+          margin-right: 5px;
+          opacity: 1;
+          float: left;
+        }
+        .dd-title-text {
+          margin-left: 25px;
+          .dd-time {
+            font-size: 0.75rem;
+          }
+          .dd-info {
+            font-size: 0.75rem;
+            color: $gray-text-light;
+          }
+        }
+      }
+
+      .dd-content {
+        .ch-tweet-container {
+          display: block;
+          position: absolute;
+          left: -3000px;
+        }
+      }
+
+      &.active {
+        .dd-content .ch-tweet-container {
+          position: static;
+          display: block;
+          left: 0;
+        }
+      }
+    }
+  }
+}

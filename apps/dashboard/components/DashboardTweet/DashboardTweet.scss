@@ -1,0 +1,126 @@
+/*
+ * DashboardTweet.scss
+ *
+ */
+
+
+
+
+
+.dashboard-tweet {
+	width: 264px;
+	height: 180px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	z-index: 1;
+	font-size: 0.75rem;
+	font-family: Helvetica, Roboto, 'Segoe UI', Calibri, sans-serif;
+
+	.tweet-head {
+		position: relative;
+
+		.twitter-avatar-default {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 36px;
+			height: 36px;
+			display: block;
+			text-decoration: none;
+			background: url('/chs/images/post-list-icons/icon_twitter.png') no-repeat center center;
+			background-size: contain;
+		}
+
+		.tweet-author {
+			margin-top: 2px;
+			padding-left: 45px;
+
+			.dname {
+				font-weight: 500;
+				white-space: nowrap;
+				word-wrap: normal;
+				color:rgb(28, 32, 34);
+				font-size: 14px;
+				line-height: 1.05;
+				text-decoration: none;
+
+				&:hover { color: rgb(59, 148, 217); }
+				&:visited { color: rgb(43, 123, 185); }
+			}
+
+			.uname {
+				font-size: 0.765625rem;
+				color: rgb(105, 120, 130);
+				display: block;
+				line-height: 1.05;
+				text-decoration: none;
+			}
+
+			.twitter-bird {
+				width: 1.09375rem;
+				height: 1.09375rem;
+				background: url("../../../easy-insights/img/TwitterLogo-small.png") no-repeat center center;
+				background-size: 100%;
+				display: block;
+				float: right;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.content {
+		margin: 15px 0 0;
+		height: 75px;
+	}
+
+	.links {
+		a { padding: 0 15px 0 2px; }
+
+		position: relative;
+		float: none;
+		color: #1076b6;
+		font-weight: normal;
+		font-size: 0.9em;
+		padding-bottom: 5px;
+	}
+
+	.count {
+		display: inline-block;
+		width: 95%;
+		position: relative;
+		float: none;
+		height: 12px;
+
+		.bar {
+			width: 84%;
+			background-color: #f4f4f4;
+			border-radius: 100px;
+			height: 12px;
+			float: left;
+
+			span {
+				display: block;
+				height: 100%;
+				background-color: #5e9bd4;
+				border-radius: 100px;
+			}
+		}
+
+		.number {
+			float: right;
+			font-size: 0.765625rem;
+			color: black;
+			display: block;
+			line-height: 1.05;
+			text-decoration: none;
+			text-align: center;
+		}
+
+	}
+}
+
+
+
+

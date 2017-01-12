@@ -1,0 +1,47 @@
+@import "../../../scss/vars";
+
+
+.container-general-error {
+
+  .col-general-error {
+    text-align: center;
+    padding-top: 20%;
+    h1 {
+      font-weight: $font-weight-normal;
+      font-size: 3rem;
+      color: $gray-header;
+      margin-bottom: 1.8rem;
+    }
+    .message-general-error {
+      img {
+        width: 30px;
+        margin-right: 10px;
+      }
+      .ch-icon {
+        width: 30px;
+        height: 30px;
+        fill: #e43e3b;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 5px;
+      }
+      font-size: 1.25rem;
+      color: $gray-header;
+      font-weight: $font-weight-normal;
+    }
+
+    ul.error-msg-points {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1rem;
+      text-align: left;
+      margin-bottom:0;
+    }
+
+    .btns {
+      padding-top: 1.7rem;
+    }
+
+  }
+}

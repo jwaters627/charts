@@ -1,0 +1,38 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundle.js",
+  "dependencies": {
+    "ch-flux": "git+ssh://git@github.com/chexagon/ch-flux.git#v0.0.2",
+    "ch-ui-lib": "git+ssh://git@github.com/chexagon/ch-ui-lib.git#v0.0.11",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.23.1",
+    "material-ui": "^0.15.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-modal": "^1.3.0",
+    "react-notification": "^5.0.7",
+    "react-tap-event-plugin": "^1.0.0",
+    "ress": "^1.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "react-addons-perf": "^15.1.0",
+    "webpack": "^1.13.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --progress --port 3050",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sgelin@crimsonhexagon.com",
+  "license": "ISC"
+}

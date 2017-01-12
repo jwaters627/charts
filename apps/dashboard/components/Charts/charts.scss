@@ -1,0 +1,102 @@
+
+.allChartsContainer{
+	margin-bottom: 20px;
+	display: inline-block;
+	padding-bottom: 300px; 
+
+	.chart{
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 30px;
+		cursor: pointer;
+		border: 2px solid rgba(4, 4, 4, 0);
+
+		&.selected{
+			border: 2px solid #44C0FF;
+			background-color: #ffffff;
+		}
+
+		.moreContainer{
+			position: absolute;
+			z-index: 100000;
+			right: -122px;
+			top: 34px;
+			padding-left: 6px;
+			border-radius: 4px;
+			border: 1px solid #ccc;
+			background-color: #fff;
+
+			.deleteButton{
+				font-weight: 500;
+				font-size: 14px;
+				margin-right: 20px;
+				margin-top: 13px;
+			}
+
+			.deleteButton:hover{
+				color: #44C0FF;
+			}
+		}
+}
+
+.inputField{
+	display: block;
+	background-color: #FAFAFA; 
+	border: none;
+	margin-left: 20px;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.inputField:focus{
+	border-bottom: 1px solid #aaa;
+	width: 80%;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.chartName{
+	margin-left: 20px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.chartAnnotation{
+	font-size: 14px;
+	text-align: center;
+}
+
+.chart:hover{
+		border: 2px solid #44C0FF;
+		
+	}
+
+.chart.open:hover{
+	margin-top: 180px;
+}
+
+}
+
+.emptyImage{
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 80px;
+}
+
+.emptyCanvasText{
+	text-align: center;
+	color: #939598;
+	font-size: 44px;
+	margin-top: 40px;
+}
+
+.emptyCanvasSubText{
+	text-align: center;
+	color: #939598;
+	font-size: 38px;
+	font-weight: 300;
+	margin-top: 18px;
+
+}

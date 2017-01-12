@@ -1,0 +1,64 @@
+#!/bin/bash
+
+lib=$1
+mode=$2
+config=./watchlib.cfg
+source $config 
+pwd=$(pwd)
+
+help() {
+  echo "tool to watch local ch lib from app dev"
+  echo "1) edit $config file to set your local paths to ch libs"
+  echo "example cfg file (modify the paths only, keep the variable names as they are):"
+  echo "ch_flux_loc=\"../../../../ch-flux\""
+  echo "ch_ui_lib_loc=\"../../../../ch-ui-lib\""
+  echo "ch_router_utils_loc=\"../../../../ch-router-utils\""
+  echo "2) usage: ./watchlib { ch-flux | ch-ui-lib | ch-router-utils } [ install ]"
+}
+
+run() {
+  echo '[building '$lib']'
+  cd $folder && npm run build; 
+  case "$mode" in  
+    install)
+      echo '[installing '$lib' locally]'
+      cd $pwd && npm i $folder;
+    ;;
+    *)
+      echo '[copying '$lib' /lib folder]'
+      cd $pwd && rsync -ahr --progress --exclude '.*' $folder/lib ./node_modules/$lib/
+    ;;
+  esac
+  echo '[done]'
+}
+
+watch() {
+  echo '[watching folder '$folder'/]'
+  while [[ true ]]
+  do
+    files=`find $folder -type f \( -iname "*" ! -iname ".*" \) -mtime -1s`
+    if [[ $files != "" ]] ; then
+      echo '[changed '$files']'
+      time run
+    fi
+    sleep 0.5
+  done
+}
+
+case "$lib" in
+  ch-flux)
+    folder=$ch_flux_loc
+    watch
+    ;;
+  ch-ui-lib)
+    folder=$ch_ui_lib_loc
+    watch
+    ;;
+  ch-router-utils)
+    folder=$ch_router_utils_loc
+    watch
+    ;;
+  *)
+    help
+    ;;
+esac

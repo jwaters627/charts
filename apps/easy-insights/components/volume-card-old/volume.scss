@@ -1,0 +1,33 @@
+@import "../../scss/vars";
+
+.general-card {
+  .chart rect {
+    fill: $blue-strong;
+  }
+
+  .bar-chart-container {
+    height: 11rem;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .axis text {
+    font-size: 10px;
+  }
+
+  .chart .current {
+    fill: green;
+    cursor: pointer;
+  }
+
+  .chart {
+    @media screen and (min-width: 320px){
+      margin-left: -10px;
+    }
+  }
+}

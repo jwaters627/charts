@@ -1,0 +1,232 @@
+module.exports = [
+  {
+    "event_name":"New Monitor - Start",
+      "type": "click",
+      "selector": "a#newMonitor"
+  },
+  {
+      "event_name": "New Monitor - Save",
+      "type":"click",
+      "selector": "button#button-create-run"
+  },
+  {
+    "event_name": "New Monitor - Save",
+    "type": "click",
+    "selector":"button#button-create"
+  },
+  {
+    "event_name": "Edit Monitor - Save",
+    "type": "click",
+    "selector":"button#button-save-reset"
+  },
+  {
+    "event_name": "Edit Monitor - Save",
+    "type": "click",
+    "selector":"button#button-save"
+  },
+  {
+    "event_name": "Edit Monitor - Start",
+    "type": "click",
+    "selector":"a#edit-monitor"
+  },
+  {
+    "event_name": "Preview Monitor",
+    "type": "click",
+    "selector":"button#preview-monitor"
+  },
+  {
+    "event_name": "Export",
+    "type": "click",
+    "selector":"a.exportAction"
+  },
+  {
+    "event_name": "New Filter",
+    "type": "mousedown",
+    "selector":"#newFilters button.submit"
+  },
+  {
+    "event_name": "Access Filters",
+    "type": "mousedown",
+    "selector":"#savedFilters li.json-form-list-item"
+  },
+  {
+    "event_name": "Summary",
+    "type": "click",
+    "selector":"a#navLinksummary"
+  },
+  {
+    "event_name": "Volume",
+    "type":"click",
+    "selector": "a#navLinkvolume"
+  },
+  {
+    "event_name": "Day and Time",
+    "type":"click",
+    "selector": "a#navLinkaggregateVolume"
+  },
+  {
+    "event_name": "Content Sources",
+    "type":"click",
+    "selector": "a#navLinkcontentSources"
+  },
+  {
+    "event_name": "Top Sites",
+    "type":"click",
+    "selector": "a#navLinktopSites"
+  },
+  {
+    "event_name": "Twitter",
+    "type":"click",
+    "selector": "a#navLinktwitterEngagement"
+  },
+  {
+    "event_name": "Tumblr",
+    "type":"click",
+    "selector": "a#navLinktumblrMetrics"
+  },
+  {
+    "event_name": "Instagram",
+    "type":"click",
+    "selector": "a#navLinkinstagramEngagement"
+  },
+  {
+    "event_name": "Topic Wheel",
+    "type":"click",
+    "selector": "a#navLinktopicWheel"
+  },
+  {
+    "event_name": "Clusters",
+    "type":"click",
+    "selector": "a#navLinkclusters"
+  },
+  {
+    "event_name": "Word Cloud",
+    "type":"click",
+    "selector": "a#navLinkwordCloud"
+  },
+  {
+    "event_name": "Topic Waves",
+    "type":"click",
+    "selector": "a#navLinktopicWave"
+  },
+  {
+    "event_name": "Post List",
+    "type":"click",
+    "selector": "a#navLinkpostList"
+  },
+  {
+    "event_name": "Authors",
+    "type":"click",
+    "selector": "a#navLinkauthors"
+  },
+  {
+    "event_name": "Affinities",
+    "type":"click",
+    "selector": "a#navLinkinterestAffinities"
+  },
+  {
+    "event_name": "Demographics",
+    "type":"click",
+    "selector": "a#navLinkdemographics"
+  },
+  {
+    "event_name": "Geography",
+    "type":"click",
+    "selector": "a#navLinkgeographybeta"
+  },
+  {
+    "event_name": "Category Mix",
+    "type":"click",
+    "selector": "a#navLinkcompareCategoryMix"
+  },
+  {
+    "event_name": "Category Trend",
+    "type":"click",
+    "selector": "a#navLinkcompareCategoryTrend"
+  },
+  {
+    "event_name": "Share of Voice",
+    "type":"click",
+    "selector": "a#navLinkcompareShareVoice"
+  },
+  {
+    "event_name": "Volume Trend",
+    "type":"click",
+    "selector": "a#navLinkcompareVolumeTrend"
+  },
+  {
+    "event_name": "Net Sentiment",
+    "type":"click",
+    "selector": "a#navLinkcompareNetSentiment"
+  },
+  {
+    "event_name":"Sent Posts",
+    "type":"click",
+    "selector":"a#navLinkinstagramAdminPosts"
+  },
+  {
+    "event_name":"Sent Posts",
+    "type":"click",
+    "selector":"a#navLinkfbAdminPosts"
+  },
+  {
+    "event_name":"Sent Posts",
+    "type":"click",
+    "selector":"a#navLinktwitterOwned"
+  },
+  {
+    "event_name":"Total Activity",
+    "type":"click",
+    "selector":"a#navLinkinstagramOwnedEngagement"
+  },
+  {
+    "event_name":"Total Activity",
+    "type":"click",
+    "selector":"a#navLinkfbEngagement"
+  },
+  {
+    "event_name":"Total Activity",
+    "type":"click",
+    "selector":"a#navLinktotalEngagement"
+  },
+  {
+    "event_name":"Followers/Likes",
+    "type":"click",
+    "selector":"a#navLinkfollowers"
+  },
+  {
+    "event_name":"Followers/Likes",
+    "type":"click",
+    "selector":"a#navLinkfbLikes"
+  },
+  {
+    "event_name":"Engagement Sentiment",
+    "type":"click",
+    "selector":"a#navLinkanalysis"
+  },
+  {
+    "event_name":"Bulk Export",
+    "type":"mousedown",
+    "selector":"a#bulkExportLink"
+  },
+  {
+    "event_name":"Audit Monitor",
+    "type":"click",
+    "selector":"a#audit-monitor"
+  },
+  {
+    "event_name":"Date Flyout - Manual",
+    "type":"click",
+    "selector":"#go"
+  },
+  {
+    "event_name":"Date Flyout - Preset",
+    "type":"mousedown",
+    "selector":"#dateOptions li"
+  },
+  {
+    "event_name":"Date Scrubber",
+    "type":"mousedown",
+    "selector":"#monitorNavigationChart"
+  }
+]
